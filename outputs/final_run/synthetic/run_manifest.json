@@ -1,0 +1,62 @@
+{
+  "cffc_version": "0.1.0",
+  "data_provenance": "synthetic",
+  "data_root": "data\\synthetic",
+  "started_at_utc": "2026-10-21T11:32:54Z",
+  "finished_at_utc": "2026-10-21T11:33:02Z",
+  "executor": "unspecified",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "config_path": "configs/default.toml",
+  "config_sha256": "1af8e254f6ac89cab52f4aba0785292247333a607d0699d74d58dc697b05746d",
+  "scenarios_run": {
+    "scenario_a": {
+      "n_files": 2,
+      "n_records_read": 19,
+      "n_events": 19,
+      "n_normalization_failures": 0,
+      "n_duplicates_dropped": 0,
+      "integrity_ok": true,
+      "ground_truth_sha256": "0f1077087ba1d238a81efbc8caf46b6c11b5d7fb9e921b1199b0fda507e813b7",
+      "manifest_sha256": "43aaa6bdd59bbcb6396e498e7f341069dac2cfb2de47aa1b4a8af8316b62fa9a",
+      "gt_steps": 4
+    },
+    "scenario_b": {
+      "n_files": 2,
+      "n_records_read": 20,
+      "n_events": 20,
+      "n_normalization_failures": 0,
+      "n_duplicates_dropped": 0,
+      "integrity_ok": true,
+      "ground_truth_sha256": "b83904e8138d9ca9eb02056ff4cabf83c3742e43b8e0617f687756f799491521",
+      "manifest_sha256": "2acb61ad3d4c4b1cfdedae34a79427154c765b954fccdcb377b3458fb4fc4741",
+      "gt_steps": 5
+    },
+    "scenario_c": {
+      "n_files": 2,
+      "n_records_read": 21,
+      "n_events": 21,
+      "n_normalization_failures": 0,
+      "n_duplicates_dropped": 0,
+      "integrity_ok": true,
+      "ground_truth_sha256": "d9304dd4ae5be79816af40ad650a3aed2a499e4c3abab22f05cb1b7b59995825",
+      "manifest_sha256": "ba6ce1ef5a1e2ec42f3d37910adae993c49fd45b1b16426abee494b88ba9e5be",
+      "gt_steps": 5
+    }
+  },
+  "scenarios_skipped": {},
+  "n_runs": 16,
+  "tables": {
+    "csv": "outputs\\final_run\\synthetic\\tables\\results_summary.csv",
+    "md": "outputs\\final_run\\synthetic\\tables\\results_summary.md"
+  },
+  "figures": [
+    "outputs\\final_run\\synthetic\\figures\\correlation_quality.png",
+    "outputs\\final_run\\synthetic\\figures\\window_sensitivity.png",
+    "outputs\\final_run\\synthetic\\figures\\timeline_scenario_a_R01.png",
+    "outputs\\final_run\\synthetic\\figures\\timeline_scenario_b_R06.png",
+    "outputs\\final_run\\synthetic\\figures\\timeline_scenario_c_R11.png"
+  ],
+  "warnings": [],
+  "notice": "SYNTHETIC TEST DATA - NOT AWS EVIDENCE - NOT RESEARCH RESULTS"
+}

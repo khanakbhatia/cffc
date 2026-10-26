@@ -1,0 +1,3 @@
+-r requirements.txt
+# The test-suite uses only the stdlib `unittest` (also collectable by pytest if you prefer it).
+pytest>=7   # optional

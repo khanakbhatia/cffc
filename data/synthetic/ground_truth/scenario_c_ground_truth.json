@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "scenario": "scenario_c",
+  "created_at_utc": "2026-01-15T11:55:00Z",
+  "author": "synthetic-generator",
+  "frozen": true,
+  "synthetic": true,
+  "steps": [
+    {
+      "step_id": 1,
+      "wall_clock_time_utc": "2026-01-15T12:00:00Z",
+      "expected_event_name": "ConsoleLogin",
+      "expected_principal": "arn:aws:iam::000000000000:user/analyst-bob",
+      "expected_source_ip": "198.51.100.77",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "credential_access",
+      "notes": ""
+    },
+    {
+      "step_id": 2,
+      "wall_clock_time_utc": "2026-01-15T12:00:10Z",
+      "expected_event_name": "ConsoleLogin",
+      "expected_principal": "arn:aws:iam::000000000000:user/analyst-bob",
+      "expected_source_ip": "198.51.100.77",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "credential_access",
+      "notes": ""
+    },
+    {
+      "step_id": 3,
+      "wall_clock_time_utc": "2026-01-15T12:00:20Z",
+      "expected_event_name": "ConsoleLogin",
+      "expected_principal": "arn:aws:iam::000000000000:user/analyst-bob",
+      "expected_source_ip": "198.51.100.77",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "credential_access",
+      "notes": ""
+    },
+    {
+      "step_id": 4,
+      "wall_clock_time_utc": "2026-01-15T12:01:00Z",
+      "expected_event_name": "ConsoleLogin",
+      "expected_principal": "arn:aws:iam::000000000000:user/analyst-bob",
+      "expected_source_ip": "198.51.100.99",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "initial_access",
+      "notes": "benign decoy login by carol 5 s later is within tolerance by design"
+    },
+    {
+      "step_id": 5,
+      "wall_clock_time_utc": "2026-01-15T12:01:15Z",
+      "expected_event_name": "RunInstances",
+      "expected_principal": "arn:aws:iam::000000000000:user/analyst-bob",
+      "expected_source_ip": "198.51.100.99",
+      "expected_resource_id": "i-0synth000000001",
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "execution",
+      "notes": ""
+    }
+  ],
+  "expected_correlation_groups": [
+    {
+      "group_id": "group_1",
+      "member_step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "same principal across failed and successful logins and RunInstances"
+    }
+  ]
+}

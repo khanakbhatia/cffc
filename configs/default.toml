@@ -1,0 +1,44 @@
+# Default experiment configuration (Stage 3.5 Part D matrix).
+# Run IDs are assigned in order: scenario index * (#templates) + template position,
+# then one tamper-test run at the end (16 runs for 3 scenarios x 5 templates + 1).
+
+[ingestion]
+strict_integrity = true          # refuse to analyse evidence that fails manifest verification
+deduplicate_event_ids = true     # duplicate CloudTrail eventIDs: keep first, report the rest
+
+[correlation]
+ignore_non_ip_source = true      # sourceIPAddress like "ec2.amazonaws.com" is not an IP -> never a link key
+null_sentinels = ["unknown", "hidden_due_to_security_reasons", ""]
+and_min_comparable_keys = 2      # AND-mode concretization (docs/ASSUMPTIONS.md A3)
+
+[evaluation]
+gt_match_tolerance_seconds = 30  # Stage 3.5 §F
+pair_scope = "labeled_vs_unlabeled"   # all | labeled_vs_unlabeled | labeled_only (docs/ASSUMPTIONS.md A5)
+require_frozen_ground_truth = true
+
+[experiments]
+scenarios = ["scenario_a", "scenario_b", "scenario_c"]
+
+[[experiments.templates]]
+label = "OR-matching"
+mode = "or"
+window_seconds = 300
+
+[[experiments.templates]]
+label = "AND-matching"
+mode = "and"
+window_seconds = 300
+
+[[experiments.templates]]
+label = "Baseline"
+mode = "baseline"
+
+[[experiments.templates]]
+label = "OR, narrow"
+mode = "or"
+window_seconds = 60
+
+[[experiments.templates]]
+label = "OR, wide"
+mode = "or"
+window_seconds = 900

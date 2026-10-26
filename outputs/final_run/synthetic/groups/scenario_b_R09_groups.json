@@ -1,0 +1,116 @@
+{
+  "mode": "or",
+  "window_seconds": 60,
+  "groups": {
+    "G001": [
+      "5a4a6f4a-575d-5c63-b6b0-5534eb817ef2"
+    ],
+    "G002": [
+      "96097ec6-2cd7-53cf-9033-777f98e84746"
+    ],
+    "G003": [
+      "a6490844-f6c8-5e01-8a9b-4d2a44471efb"
+    ],
+    "G004": [
+      "05294bba-3882-545a-893d-d85b5a91041e"
+    ],
+    "G005": [
+      "3f815675-ece5-5bb1-bbba-7cee612bca6f"
+    ],
+    "G006": [
+      "ca24a5c0-7b9f-5bba-8acc-ccc9582608f8"
+    ],
+    "G007": [
+      "76fe1752-9e8c-5221-a476-d922c2b164cf"
+    ],
+    "G008": [
+      "efafe4e4-4a3e-5c71-8fe7-3694838f720b",
+      "898e5abf-afbf-5fa5-9fe6-3ff76c613e31",
+      "568c2ad4-215d-525b-9b01-a1a43a184bf7",
+      "509d89b7-3a4a-5678-925a-55c6d6815b42"
+    ],
+    "G009": [
+      "259deb50-6f7a-54f7-b001-cbbfc5328037"
+    ],
+    "G010": [
+      "2e48b4df-14b3-5fd0-8948-f589aea40072"
+    ],
+    "G011": [
+      "53d38a3d-18d2-58ab-bab6-1e07154c5234"
+    ],
+    "G012": [
+      "7d850aa9-f9b2-5bef-b08b-019feac148d6"
+    ],
+    "G013": [
+      "2c5c0103-e399-580a-9d77-f286ffd8e1cd"
+    ],
+    "G014": [
+      "6f3f4e63-4f84-5fb9-bec4-78e42d592bd0"
+    ],
+    "G015": [
+      "a4b83b20-76c6-50f7-82e9-457003f6730f"
+    ],
+    "G016": [
+      "b77892d9-1728-5286-bf69-9525aa9b5447"
+    ],
+    "G017": [
+      "1ef8f27a-2de1-5e07-ad33-39275832b490"
+    ]
+  },
+  "links": [
+    {
+      "a": "efafe4e4-4a3e-5c71-8fe7-3694838f720b",
+      "b": "898e5abf-afbf-5fa5-9fe6-3ff76c613e31",
+      "matched_keys": [
+        "principal_id",
+        "source_ip"
+      ],
+      "delta_s": 5.0
+    },
+    {
+      "a": "efafe4e4-4a3e-5c71-8fe7-3694838f720b",
+      "b": "568c2ad4-215d-525b-9b01-a1a43a184bf7",
+      "matched_keys": [
+        "principal_id",
+        "source_ip"
+      ],
+      "delta_s": 10.0
+    },
+    {
+      "a": "efafe4e4-4a3e-5c71-8fe7-3694838f720b",
+      "b": "509d89b7-3a4a-5678-925a-55c6d6815b42",
+      "matched_keys": [
+        "principal_id",
+        "source_ip"
+      ],
+      "delta_s": 15.0
+    },
+    {
+      "a": "898e5abf-afbf-5fa5-9fe6-3ff76c613e31",
+      "b": "568c2ad4-215d-525b-9b01-a1a43a184bf7",
+      "matched_keys": [
+        "principal_id",
+        "source_ip"
+      ],
+      "delta_s": 5.0
+    },
+    {
+      "a": "898e5abf-afbf-5fa5-9fe6-3ff76c613e31",
+      "b": "509d89b7-3a4a-5678-925a-55c6d6815b42",
+      "matched_keys": [
+        "principal_id",
+        "source_ip"
+      ],
+      "delta_s": 10.0
+    },
+    {
+      "a": "568c2ad4-215d-525b-9b01-a1a43a184bf7",
+      "b": "509d89b7-3a4a-5678-925a-55c6d6815b42",
+      "matched_keys": [
+        "principal_id",
+        "source_ip"
+      ],
+      "delta_s": 5.0
+    }
+  ]
+}

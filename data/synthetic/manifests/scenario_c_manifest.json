@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "scenario": "scenario_c",
+  "created_at_utc": "2026-01-15T13:00:00Z",
+  "collector": "synthetic-generator",
+  "entries": [
+    {
+      "filename": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1135Z_EA31F5361EF651C2.json.gz",
+      "sha256_gz": "2fb326011037a92b5a6663c008e6df9ac7b1157eaf9effa7b76d1b67d3b65b1d",
+      "sha256_json": "1655bb84a494a41003595b51c001353e12a78b167f1ffac967a39870d6ecdf87",
+      "file_size_bytes_gz": 1333,
+      "file_size_bytes_json": 6591,
+      "collected_at_utc": "2026-01-15T13:00:00Z",
+      "cloudtrail_validation_digest_available": false,
+      "cloudtrail_validation_result": null
+    },
+    {
+      "filename": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1151Z_D407A9EABADC5143.json.gz",
+      "sha256_gz": "89a9c152865a73d96a02dec3e1a791df0dc7ef9d9088b032bf1dc88ec5531c59",
+      "sha256_json": "44c09bd939c2f36759e12dc7f549d9513dfc3257b583470d9e11393f78668a7e",
+      "file_size_bytes_gz": 1345,
+      "file_size_bytes_json": 6970,
+      "collected_at_utc": "2026-01-15T13:00:00Z",
+      "cloudtrail_validation_digest_available": false,
+      "cloudtrail_validation_result": null
+    }
+  ]
+}

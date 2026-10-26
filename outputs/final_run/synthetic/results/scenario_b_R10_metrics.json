@@ -1,0 +1,111 @@
+{
+  "run_id": "R10",
+  "scenario": "scenario_b",
+  "config_label": "OR, wide",
+  "mode": "or",
+  "time_window_seconds": 900,
+  "data_provenance": "synthetic",
+  "schema_coverage": 0.95,
+  "collection_completeness": 1.0,
+  "correlation_precision": 0.6,
+  "correlation_recall": 1.0,
+  "f1_score": 0.7499999999999999,
+  "false_correlation_rate": 0.4,
+  "timeline_ordering_accuracy": 1.0,
+  "timeline_completeness": 1.0,
+  "tamper_detection_rate": null,
+  "processing_time_seconds": {
+    "normalization": 0.0077,
+    "correlation": 0.0011,
+    "timeline": 0.0016,
+    "evaluation": 0.0062
+  },
+  "notes": "",
+  "undefined_metrics": [],
+  "executed_at_utc": "2026-10-21T11:32:55Z",
+  "executor": "unspecified",
+  "details": {
+    "pair_scope_primary": "labeled_vs_unlabeled",
+    "pair_metrics_by_scope": {
+      "all": {
+        "tp": 6,
+        "fp": 26,
+        "fn": 0,
+        "algo_pairs": 32,
+        "true_pairs": 6,
+        "precision": 0.1875,
+        "recall": 1.0,
+        "f1": 0.3157894736842105,
+        "false_correlation_rate": 0.8125
+      },
+      "labeled_vs_unlabeled": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 0,
+        "algo_pairs": 10,
+        "true_pairs": 6,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "false_correlation_rate": 0.4
+      },
+      "labeled_only": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 0,
+        "algo_pairs": 10,
+        "true_pairs": 6,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "false_correlation_rate": 0.4
+      }
+    },
+    "n_groups": 7,
+    "n_multi_event_groups": 4,
+    "n_links": 22,
+    "n_pairs_examined": 102,
+    "schema_coverage": {
+      "value": 0.95,
+      "populated_fields": 304,
+      "possible_fields": 320,
+      "n_events": 20
+    },
+    "collection_completeness": {
+      "value": 1.0,
+      "matched": 5,
+      "total": 5,
+      "missing_steps": [],
+      "ambiguous_steps": [
+        3,
+        4,
+        5
+      ],
+      "tolerance_seconds": 30.0
+    },
+    "timeline_ordering": {
+      "value": 1.0,
+      "correct_pairs": 4,
+      "effective_denominator": 4,
+      "full_denominator": 4,
+      "misordered_adjacent_pairs": []
+    },
+    "timeline_completeness": {
+      "value": 1.0,
+      "present": 5,
+      "total": 5,
+      "missing_steps": []
+    },
+    "invariant_violations": [],
+    "gt_match_delta_seconds": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    },
+    "ground_truth_sha256": "b83904e8138d9ca9eb02056ff4cabf83c3742e43b8e0617f687756f799491521",
+    "normalization_time_is_per_scenario": true
+  },
+  "WARNING": "SYNTHETIC TEST DATA - NOT AWS EVIDENCE - NOT RESEARCH RESULTS"
+}

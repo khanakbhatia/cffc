@@ -1,0 +1,36 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Sid": "CloudTrailAdmin", "Effect": "Allow", "Action": [
+      "cloudtrail:CreateTrail", "cloudtrail:StartLogging", "cloudtrail:StopLogging",
+      "cloudtrail:PutEventSelectors", "cloudtrail:GetEventSelectors", "cloudtrail:GetTrailStatus",
+      "cloudtrail:DescribeTrails", "cloudtrail:DeleteTrail", "cloudtrail:ValidateLogs",
+      "cloudtrail:ListTags", "cloudtrail:AddTags"
+    ], "Resource": "*"},
+    {"Sid": "S3BucketAdmin", "Effect": "Allow", "Action": [
+      "s3:CreateBucket", "s3:DeleteBucket", "s3:PutBucketVersioning", "s3:PutBucketPolicy",
+      "s3:PutBucketTagging", "s3:PutPublicAccessBlock", "s3:PutObjectLockConfiguration",
+      "s3:PutBucketObjectLockConfiguration", "s3:GetBucketLocation", "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ], "Resource": ["arn:aws:s3:::cff-research-*"]},
+    {"Sid": "S3ObjectReadWrite", "Effect": "Allow", "Action": [
+      "s3:PutObject", "s3:GetObject", "s3:GetObjectVersion", "s3:DeleteObject"
+    ], "Resource": ["arn:aws:s3:::cff-research-*/*"]},
+    {"Sid": "IamBootstrapScopedByTag", "Effect": "Allow", "Action": [
+      "iam:CreateUser", "iam:DeleteUser", "iam:TagUser", "iam:CreateAccessKey", "iam:DeleteAccessKey",
+      "iam:ListAccessKeys", "iam:CreateLoginProfile", "iam:DeleteLoginProfile", "iam:UpdateLoginProfile",
+      "iam:PutUserPolicy", "iam:DeleteUserPolicy", "iam:AttachUserPolicy", "iam:DetachUserPolicy",
+      "iam:CreateRole", "iam:DeleteRole", "iam:TagRole", "iam:PutRolePolicy", "iam:DeleteRolePolicy"
+    ], "Resource": "*", "Condition": {"StringLikeIfExists": {"aws:RequestTag/Project": "cffc-research"}}},
+    {"Sid": "IamReadOnly", "Effect": "Allow", "Action": [
+      "iam:GetUser", "iam:GetRole", "iam:ListUsers", "iam:ListRoles", "iam:ListUserTags", "iam:ListRoleTags",
+      "sts:GetCallerIdentity"
+    ], "Resource": "*"},
+    {"Sid": "Ec2ScenarioC", "Effect": "Allow", "Action": [
+      "ec2:RunInstances", "ec2:TerminateInstances", "ec2:DescribeInstances", "ec2:CreateTags",
+      "ec2:DescribeImages", "ec2:DescribeSecurityGroups", "ec2:DescribeSubnets", "ec2:DescribeVpcs"
+    ], "Resource": "*"},
+    {"Sid": "TaggingLookup", "Effect": "Allow", "Action": ["tag:GetResources"], "Resource": "*"},
+    {"Sid": "Billing", "Effect": "Allow", "Action": ["ce:GetCostAndUsage"], "Resource": "*"}
+  ]
+}

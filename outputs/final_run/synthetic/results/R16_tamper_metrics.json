@@ -1,0 +1,36 @@
+{
+  "run_id": "R16",
+  "scenario": "all",
+  "config_label": "Tamper test",
+  "mode": "tamper",
+  "time_window_seconds": null,
+  "data_provenance": "synthetic",
+  "schema_coverage": null,
+  "collection_completeness": null,
+  "correlation_precision": null,
+  "correlation_recall": null,
+  "f1_score": null,
+  "false_correlation_rate": null,
+  "timeline_ordering_accuracy": null,
+  "timeline_completeness": null,
+  "tamper_detection_rate": 1.0,
+  "processing_time_seconds": {
+    "normalization": null,
+    "correlation": null,
+    "timeline": null,
+    "evaluation": null
+  },
+  "notes": "Implementation-correctness check of byte-level tamper evidence (not a research finding).",
+  "undefined_metrics": [],
+  "executed_at_utc": "2026-10-21T11:32:55Z",
+  "executor": "unspecified",
+  "details": {
+    "tamper": {
+      "value": 1.0,
+      "detected": 18,
+      "attempted": 18
+    },
+    "files_tested": 6
+  },
+  "WARNING": "SYNTHETIC TEST DATA - NOT AWS EVIDENCE - NOT RESEARCH RESULTS"
+}

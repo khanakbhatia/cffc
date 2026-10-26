@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: cffc
+Version: 0.1.0
+Summary: Cloud Forensic Evidence Correlation Framework - research software
+Requires-Python: >=3.11
+Requires-Dist: pandas>=2.0
+Requires-Dist: matplotlib>=3.7

@@ -1,0 +1,189 @@
+{
+  "files_tested": 6,
+  "modifications_attempted": 18,
+  "modifications_detected": 18,
+  "tamper_detection_rate": 1.0,
+  "results": [
+    {
+      "file": "scenario_a/000000000000_CloudTrail_us-east-1_20260115T0851Z_51B99CBCB9745549.json.gz",
+      "modification_type": "field_edit",
+      "original_hash": "ad8a2364c7874914f37b5947a3800710387d643abebd6058ee50ef31a6475cbf",
+      "post_modification_hash": "24b0687c8dafde19f5081d842af0b2e58cba05a2bdee423300dd3f25102ed484",
+      "original_content_hash": "53745a42119b04b1d6217a5a11390179d5832890a2383adc8803d8057f59ec40",
+      "post_content_hash": "d65c37d5d6d030cb2f14e07b18449063c39523a449bc3195348208090ba73d7a",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_a/000000000000_CloudTrail_us-east-1_20260115T0851Z_51B99CBCB9745549.json.gz",
+      "modification_type": "byte_truncation",
+      "original_hash": "ad8a2364c7874914f37b5947a3800710387d643abebd6058ee50ef31a6475cbf",
+      "post_modification_hash": "7b9f853dfcfe85df9bc442799def816cff9aba365832584bc70cf23a8a587b65",
+      "original_content_hash": "53745a42119b04b1d6217a5a11390179d5832890a2383adc8803d8057f59ec40",
+      "post_content_hash": null,
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_a/000000000000_CloudTrail_us-east-1_20260115T0851Z_51B99CBCB9745549.json.gz",
+      "modification_type": "line_reorder",
+      "original_hash": "ad8a2364c7874914f37b5947a3800710387d643abebd6058ee50ef31a6475cbf",
+      "post_modification_hash": "8b2633a852db66c0a29e6577adc7d7cbdbf558f10f721cd2c8145a4e73c13662",
+      "original_content_hash": "53745a42119b04b1d6217a5a11390179d5832890a2383adc8803d8057f59ec40",
+      "post_content_hash": "2097294918c5cc1c3d14ff5f0a8a9532a40ef3ab65d94381e3f96a9f1405d9ef",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_a/000000000000_CloudTrail_us-east-1_20260115T0853Z_DB6D5D0C0EB15B75.json.gz",
+      "modification_type": "field_edit",
+      "original_hash": "b0a02c2c1992d7d3d8d99c475268bcd67bfd1c80c1ab9543e299306b5bcc1787",
+      "post_modification_hash": "7678cae0f96e4c8ad0fc3293f0243c2bceb9e321ffe531634f54547d25574c73",
+      "original_content_hash": "e1235e75b1a1a85f49dcf92857f77485c120bc8c1cf42017d65b75c413c596e2",
+      "post_content_hash": "514797605d20b42073ad11635aa48829bf538b10803d92dab59390041b30a866",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_a/000000000000_CloudTrail_us-east-1_20260115T0853Z_DB6D5D0C0EB15B75.json.gz",
+      "modification_type": "byte_truncation",
+      "original_hash": "b0a02c2c1992d7d3d8d99c475268bcd67bfd1c80c1ab9543e299306b5bcc1787",
+      "post_modification_hash": "5861f71c6e91cd10b765084b5b76eec83df70aed79865365d97901cd94692f4b",
+      "original_content_hash": "e1235e75b1a1a85f49dcf92857f77485c120bc8c1cf42017d65b75c413c596e2",
+      "post_content_hash": null,
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_a/000000000000_CloudTrail_us-east-1_20260115T0853Z_DB6D5D0C0EB15B75.json.gz",
+      "modification_type": "line_reorder",
+      "original_hash": "b0a02c2c1992d7d3d8d99c475268bcd67bfd1c80c1ab9543e299306b5bcc1787",
+      "post_modification_hash": "5d70c9c2d71b46c1d3156a573bc432159e9c3d4741e19696c3b7c0dd632d8351",
+      "original_content_hash": "e1235e75b1a1a85f49dcf92857f77485c120bc8c1cf42017d65b75c413c596e2",
+      "post_content_hash": "2a2b0424a1ab3daea5cb40c022a4f24321e3618a051dfabff7b6f7b57deaaa55",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_b/000000000000_CloudTrail_us-east-1_20260115T1010Z_8E7A556E56955752.json.gz",
+      "modification_type": "field_edit",
+      "original_hash": "326d1f790d43ead726248816fa834ef7100eef25eff1c767fa852f41342a0591",
+      "post_modification_hash": "97a54feb7220714a8429415ce339351e9cfdf202cbce70fcc5a191c87d34223b",
+      "original_content_hash": "6cf4d7c848d67ccc886c83c646b6f1935a8b4f57dc4dcf194312085abc32c7a0",
+      "post_content_hash": "cd1d4baca3007fb40741761d51c20dbe6b702e97ce487dd5ff3d6c26a11dcba1",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_b/000000000000_CloudTrail_us-east-1_20260115T1010Z_8E7A556E56955752.json.gz",
+      "modification_type": "byte_truncation",
+      "original_hash": "326d1f790d43ead726248816fa834ef7100eef25eff1c767fa852f41342a0591",
+      "post_modification_hash": "57568dfe1419cf652e20ff7778932b8230d0271db2d66954df1bf45a072f5f89",
+      "original_content_hash": "6cf4d7c848d67ccc886c83c646b6f1935a8b4f57dc4dcf194312085abc32c7a0",
+      "post_content_hash": null,
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_b/000000000000_CloudTrail_us-east-1_20260115T1010Z_8E7A556E56955752.json.gz",
+      "modification_type": "line_reorder",
+      "original_hash": "326d1f790d43ead726248816fa834ef7100eef25eff1c767fa852f41342a0591",
+      "post_modification_hash": "ff43a8812603b6d4adf77fbf00405a0b35487a99cf5481ff850c7157ae6087db",
+      "original_content_hash": "6cf4d7c848d67ccc886c83c646b6f1935a8b4f57dc4dcf194312085abc32c7a0",
+      "post_content_hash": "c68b8c6b53d54874536984d946cbdda8818e9f42254155d5c42ce4629cb547da",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_b/000000000000_CloudTrail_us-east-1_20260115T1016Z_E0E9C1DAC23E569B.json.gz",
+      "modification_type": "field_edit",
+      "original_hash": "22c6b98e43998323bf325f7f953e7723662e80636678902347742df56723f7ff",
+      "post_modification_hash": "82a23a78e3f84c50ef7302528ac7671fa525bb9e205443798911dc39bf9494c2",
+      "original_content_hash": "a9e4f045aebfb05bec0bced9a1ab8c45daa1e65a2cf1c38f6c5e8ed1d8fb9628",
+      "post_content_hash": "6f2cc64e185729f1fb25ffa7762f0b0bf87a3153ab65dbcf0e20e71aaf518fe9",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_b/000000000000_CloudTrail_us-east-1_20260115T1016Z_E0E9C1DAC23E569B.json.gz",
+      "modification_type": "byte_truncation",
+      "original_hash": "22c6b98e43998323bf325f7f953e7723662e80636678902347742df56723f7ff",
+      "post_modification_hash": "e9ff00be647a306b853872bd1ce183192011a1921a156b9483c3d56a45eaba72",
+      "original_content_hash": "a9e4f045aebfb05bec0bced9a1ab8c45daa1e65a2cf1c38f6c5e8ed1d8fb9628",
+      "post_content_hash": null,
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_b/000000000000_CloudTrail_us-east-1_20260115T1016Z_E0E9C1DAC23E569B.json.gz",
+      "modification_type": "line_reorder",
+      "original_hash": "22c6b98e43998323bf325f7f953e7723662e80636678902347742df56723f7ff",
+      "post_modification_hash": "d64903cc81cdadf472396434c0242df7154dfa8d922e1f063b32066bacd425f8",
+      "original_content_hash": "a9e4f045aebfb05bec0bced9a1ab8c45daa1e65a2cf1c38f6c5e8ed1d8fb9628",
+      "post_content_hash": "11909c46048ecf443eaaca25839f8c04237bc372a884b26e34229265f5fa9faf",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1135Z_EA31F5361EF651C2.json.gz",
+      "modification_type": "field_edit",
+      "original_hash": "2fb326011037a92b5a6663c008e6df9ac7b1157eaf9effa7b76d1b67d3b65b1d",
+      "post_modification_hash": "61cde23ca77bcc067e2e388000d3fd56830cb8f3814ff3a5347c95239e018bbd",
+      "original_content_hash": "1655bb84a494a41003595b51c001353e12a78b167f1ffac967a39870d6ecdf87",
+      "post_content_hash": "dea6cad8dfb183d8ede233cf2ce4cd4df29fcd5c6111a7e904c2839be1421475",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1135Z_EA31F5361EF651C2.json.gz",
+      "modification_type": "byte_truncation",
+      "original_hash": "2fb326011037a92b5a6663c008e6df9ac7b1157eaf9effa7b76d1b67d3b65b1d",
+      "post_modification_hash": "f6e6f73c4ec6f99608b3ab575ead4f7005524b2e3afa211e6a0fc3b445c18e04",
+      "original_content_hash": "1655bb84a494a41003595b51c001353e12a78b167f1ffac967a39870d6ecdf87",
+      "post_content_hash": null,
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1135Z_EA31F5361EF651C2.json.gz",
+      "modification_type": "line_reorder",
+      "original_hash": "2fb326011037a92b5a6663c008e6df9ac7b1157eaf9effa7b76d1b67d3b65b1d",
+      "post_modification_hash": "a6c10b4335e04df3aed174100738e8bc94cabb521a5f9653d4afcb3aabb3cf9c",
+      "original_content_hash": "1655bb84a494a41003595b51c001353e12a78b167f1ffac967a39870d6ecdf87",
+      "post_content_hash": "c8ba5ebdd216c85657a4e437eacfbcf6d8d048e302357af1aa6bd690254b3366",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1151Z_D407A9EABADC5143.json.gz",
+      "modification_type": "field_edit",
+      "original_hash": "89a9c152865a73d96a02dec3e1a791df0dc7ef9d9088b032bf1dc88ec5531c59",
+      "post_modification_hash": "cd4d1153e68b4f705218c1f146619e7d6967c41f56c757326ba4f84848b02dfb",
+      "original_content_hash": "44c09bd939c2f36759e12dc7f549d9513dfc3257b583470d9e11393f78668a7e",
+      "post_content_hash": "fe7744654fae32894c4be42b5e61b524676b93a509f673b240e995602097323e",
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1151Z_D407A9EABADC5143.json.gz",
+      "modification_type": "byte_truncation",
+      "original_hash": "89a9c152865a73d96a02dec3e1a791df0dc7ef9d9088b032bf1dc88ec5531c59",
+      "post_modification_hash": "bfd6144d6a576631644f1af30a887cf32cf760fd4c28dc245a879c4c7066d1d5",
+      "original_content_hash": "44c09bd939c2f36759e12dc7f549d9513dfc3257b583470d9e11393f78668a7e",
+      "post_content_hash": null,
+      "detected": true,
+      "control_ok": true
+    },
+    {
+      "file": "scenario_c/000000000000_CloudTrail_us-east-1_20260115T1151Z_D407A9EABADC5143.json.gz",
+      "modification_type": "line_reorder",
+      "original_hash": "89a9c152865a73d96a02dec3e1a791df0dc7ef9d9088b032bf1dc88ec5531c59",
+      "post_modification_hash": "3679ef5278d6f5669a3de96e1fe71814e135ebdd70ece56c7f1bb19131520b85",
+      "original_content_hash": "44c09bd939c2f36759e12dc7f549d9513dfc3257b583470d9e11393f78668a7e",
+      "post_content_hash": "0fe77afc89d0314e8b90ca1134cf28c5ae557378bcb368e93668ac2ce79ff4dd",
+      "detected": true,
+      "control_ok": true
+    }
+  ],
+  "scope_note": "Implementation-correctness check of byte-level tamper evidence only; it does not test pre-collection alteration, manifest forgery, or legal chain-of-custody."
+}

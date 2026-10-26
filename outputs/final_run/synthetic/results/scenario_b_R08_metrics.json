@@ -1,0 +1,116 @@
+{
+  "run_id": "R08",
+  "scenario": "scenario_b",
+  "config_label": "Baseline",
+  "mode": "baseline",
+  "time_window_seconds": null,
+  "data_provenance": "synthetic",
+  "schema_coverage": 0.95,
+  "collection_completeness": 1.0,
+  "correlation_precision": null,
+  "correlation_recall": null,
+  "f1_score": null,
+  "false_correlation_rate": null,
+  "timeline_ordering_accuracy": 1.0,
+  "timeline_completeness": 1.0,
+  "tamper_detection_rate": null,
+  "processing_time_seconds": {
+    "normalization": 0.0077,
+    "correlation": 0.0002,
+    "timeline": 0.0026,
+    "evaluation": 0.0143
+  },
+  "notes": "Baseline performs no correlation: precision/recall/F1/FCR are undefined per the approved Part D matrix.",
+  "undefined_metrics": [
+    "correlation_precision",
+    "correlation_recall",
+    "f1_score",
+    "false_correlation_rate"
+  ],
+  "executed_at_utc": "2026-10-21T11:32:55Z",
+  "executor": "unspecified",
+  "details": {
+    "pair_scope_primary": "labeled_vs_unlabeled",
+    "pair_metrics_by_scope": {
+      "all": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "algo_pairs": 0,
+        "true_pairs": 6,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "false_correlation_rate": null
+      },
+      "labeled_vs_unlabeled": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "algo_pairs": 0,
+        "true_pairs": 6,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "false_correlation_rate": null
+      },
+      "labeled_only": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "algo_pairs": 0,
+        "true_pairs": 6,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "false_correlation_rate": null
+      }
+    },
+    "n_groups": 20,
+    "n_multi_event_groups": 0,
+    "n_links": 0,
+    "n_pairs_examined": 0,
+    "schema_coverage": {
+      "value": 0.95,
+      "populated_fields": 304,
+      "possible_fields": 320,
+      "n_events": 20
+    },
+    "collection_completeness": {
+      "value": 1.0,
+      "matched": 5,
+      "total": 5,
+      "missing_steps": [],
+      "ambiguous_steps": [
+        3,
+        4,
+        5
+      ],
+      "tolerance_seconds": 30.0
+    },
+    "timeline_ordering": {
+      "value": 1.0,
+      "correct_pairs": 4,
+      "effective_denominator": 4,
+      "full_denominator": 4,
+      "misordered_adjacent_pairs": []
+    },
+    "timeline_completeness": {
+      "value": 1.0,
+      "present": 5,
+      "total": 5,
+      "missing_steps": []
+    },
+    "invariant_violations": [],
+    "gt_match_delta_seconds": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    },
+    "ground_truth_sha256": "b83904e8138d9ca9eb02056ff4cabf83c3742e43b8e0617f687756f799491521",
+    "normalization_time_is_per_scenario": true
+  },
+  "WARNING": "SYNTHETIC TEST DATA - NOT AWS EVIDENCE - NOT RESEARCH RESULTS"
+}

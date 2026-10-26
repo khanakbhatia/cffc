@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "scenario": "scenario_a",
+  "created_at_utc": "2026-01-15T08:55:00Z",
+  "author": "synthetic-generator",
+  "frozen": true,
+  "synthetic": true,
+  "steps": [
+    {
+      "step_id": 1,
+      "wall_clock_time_utc": "2026-01-15T09:00:00Z",
+      "expected_event_name": "CreateUser",
+      "expected_principal": "arn:aws:iam::000000000000:user/admin-synth",
+      "expected_source_ip": "192.0.2.10",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_0",
+      "is_attack_related": false,
+      "attack_stage": "setup",
+      "notes": ""
+    },
+    {
+      "step_id": 2,
+      "wall_clock_time_utc": "2026-01-15T09:01:00Z",
+      "expected_event_name": "AttachUserPolicy",
+      "expected_principal": "arn:aws:iam::000000000000:user/lowpriv-user",
+      "expected_source_ip": "198.51.100.77",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "privilege_escalation",
+      "notes": ""
+    },
+    {
+      "step_id": 3,
+      "wall_clock_time_utc": "2026-01-15T09:01:30Z",
+      "expected_event_name": "AssumeRole",
+      "expected_principal": "arn:aws:iam::000000000000:user/lowpriv-user",
+      "expected_source_ip": "198.51.100.78",
+      "expected_resource_id": "arn:aws:iam::000000000000:role/admin-role",
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "privilege_escalation",
+      "notes": "same-second collision with step 4 by design"
+    },
+    {
+      "step_id": 4,
+      "wall_clock_time_utc": "2026-01-15T09:01:30Z",
+      "expected_event_name": "GetCallerIdentity",
+      "expected_principal": "arn:aws:iam::000000000000:user/lowpriv-user",
+      "expected_source_ip": "198.51.100.77",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "discovery",
+      "notes": ""
+    }
+  ],
+  "expected_correlation_groups": [
+    {
+      "group_id": "group_0",
+      "member_step_ids": [
+        1
+      ],
+      "rationale": "benign setup action"
+    },
+    {
+      "group_id": "group_1",
+      "member_step_ids": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "same principal across steps 2-4"
+    }
+  ]
+}

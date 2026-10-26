@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "scenario": "scenario_b",
+  "created_at_utc": "2026-01-15T10:25:00Z",
+  "author": "synthetic-generator",
+  "frozen": true,
+  "synthetic": true,
+  "steps": [
+    {
+      "step_id": 1,
+      "wall_clock_time_utc": "2026-01-15T10:30:00Z",
+      "expected_event_name": "GetObject",
+      "expected_principal": "arn:aws:iam::000000000000:user/svc-reader",
+      "expected_source_ip": "192.0.2.30",
+      "expected_resource_id": "arn:aws:s3:::synth-research-bucket/reports/q3.csv",
+      "expected_correlation_group_id": "group_0",
+      "is_attack_related": false,
+      "attack_stage": "baseline_access",
+      "notes": ""
+    },
+    {
+      "step_id": 2,
+      "wall_clock_time_utc": "2026-01-15T10:32:00Z",
+      "expected_event_name": "ListBuckets",
+      "expected_principal": "arn:aws:iam::000000000000:user/svc-reader",
+      "expected_source_ip": "203.0.113.50",
+      "expected_resource_id": null,
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "discovery",
+      "notes": ""
+    },
+    {
+      "step_id": 3,
+      "wall_clock_time_utc": "2026-01-15T10:32:05Z",
+      "expected_event_name": "GetObject",
+      "expected_principal": "arn:aws:iam::000000000000:user/svc-reader",
+      "expected_source_ip": "203.0.113.50",
+      "expected_resource_id": "arn:aws:s3:::synth-research-bucket/secret/a.csv",
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "collection",
+      "notes": ""
+    },
+    {
+      "step_id": 4,
+      "wall_clock_time_utc": "2026-01-15T10:32:10Z",
+      "expected_event_name": "GetObject",
+      "expected_principal": "arn:aws:iam::000000000000:user/svc-reader",
+      "expected_source_ip": "203.0.113.50",
+      "expected_resource_id": "arn:aws:s3:::synth-research-bucket/secret/b.csv",
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "collection",
+      "notes": ""
+    },
+    {
+      "step_id": 5,
+      "wall_clock_time_utc": "2026-01-15T10:32:15Z",
+      "expected_event_name": "GetObject",
+      "expected_principal": "arn:aws:iam::000000000000:user/svc-reader",
+      "expected_source_ip": "203.0.113.50",
+      "expected_resource_id": "arn:aws:s3:::synth-research-bucket/secret/c.csv",
+      "expected_correlation_group_id": "group_1",
+      "is_attack_related": true,
+      "attack_stage": "exfiltration",
+      "notes": ""
+    }
+  ],
+  "expected_correlation_groups": [
+    {
+      "group_id": "group_0",
+      "member_step_ids": [
+        1
+      ],
+      "rationale": "known-IP baseline access"
+    },
+    {
+      "group_id": "group_1",
+      "member_step_ids": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "burst from unfamiliar IP"
+    }
+  ]
+}
